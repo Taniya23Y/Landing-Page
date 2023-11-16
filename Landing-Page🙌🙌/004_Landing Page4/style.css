@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgb(255, 236, 239);
+}
+
+.nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.nav h5{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 4px 9px;
+    border: 1.5px solid #000;
+    border-radius: 50px;
+    margin: 0 7px;
+    font-weight: 500;
+}
+
+.center{
+    height: calc(100% - 100px);
+    width: 100%;
+    /* background-color: aquamarine; */
+    position: relative;
+    padding: 15px 20px;
+}
+
+h1{
+    font-size: 90px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    white-space: nowrap;
+    font-weight: 900;
+    font-style: italic;
+    transform: translate(-50%, 0);
+}
+
+h1::before{
+    content: "Happy Socks";
+    position: absolute;
+    /* background-color: red; */
+    left: -10px;
+    top: -10px;
+    z-index: -1;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    color: transparent;
+
+}
+
+/* .center h2{
+    font-size: 90px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 49.4%;
+    top: 4px;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+    white-space: nowrap;
+    font-weight: 900;
+    font-style: italic;
+    transform: translate(-50%, 0);
+} */
+
+.image{
+    position: absolute;
+    top: 60%;
+    height: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    /* background-color: red; */
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.button{
+    padding: 17px 36px;
+    font-size: 16px;
+    position: absolute;
+    right: 26%;
+    top: 29%;
+    transform: rotate(-5deg);
+    background-color: rgb(106, 173, 106);
+    text-transform: uppercase;
+    border-radius: 50%;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.button2{
+    padding: 17px 36px;
+    font-size: 16px;
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+    transform: rotate(-5deg);
+    background-color: rgb(106, 173, 106);
+    text-transform: uppercase;
+    border-radius: 50%;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.socks{
+    height: 190px;
+    width: 230px;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    z-index: 99;
+    top: 29%;
+    left: 22%;
+    transform: rotate(5deg);
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFtgHqivd1o8S3OwwW0on_fwUZEeReovfu_w&usqp=CAU); */
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #000;
+}
+
+.socks::after{
+    content: "";
+    height: 190px;
+    width: 230px;
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    right: -15px;
+    border: 2px solid #000;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFtgHqivd1o8S3OwwW0on_fwUZEeReovfu_w&usqp=CAU);
+    background-size: cover;
+    background-position: center;
+}
+
+.socks2{
+    height: 190px;
+    width: 230px;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    z-index: 99;
+    right: 20%;
+    bottom: 22%;
+    transform: rotate(5deg);
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFtgHqivd1o8S3OwwW0on_fwUZEeReovfu_w&usqp=CAU); */
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #000;
+}
+
+.socks2::after{
+    content: "";
+    height: 190px;
+    width: 230px;
+    position: absolute;
+    z-index: -1;
+    right: -15px;
+    bottom: -15px;
+    border: 2px solid #000;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFtgHqivd1o8S3OwwW0on_fwUZEeReovfu_w&usqp=CAU);
+    background-size: cover;
+    background-position: center;
+}
