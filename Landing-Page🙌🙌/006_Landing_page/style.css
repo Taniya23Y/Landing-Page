@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family:  'Segoe UI';
+    background-color: #dde5ef;
+}
+
+/*---------------------------*/
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    /* background-color: rgba(161, 214, 214, 0.741); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav > h1{
+    font-size: 31px;
+    font-weight: 100;
+}
+
+.nav .part_two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part_two a{
+    text-decoration: none;
+    color: #222;
+    margin: 20px;
+}
+
+.nav .part_two a:nth-last-child(1){
+    /* background-color: rgba(10, 180, 223, 0.634); */
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.nav .part_two a:nth-last-child(1) .green{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.4s ease;
+}
+
+.nav .part_two a:nth-last-child(1) h5{
+    /* font-weight: 100; */
+    position: relative;
+    z-index: 99;
+}
+
+.nav .part_two a:nth-last-child(1):hover .green{
+    left: 0;
+}
+
+/*---------------------------*/
+
+.page1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1 h1{
+    font-size: 7.5vw;
+    font-weight: 400;
+    text-transform: capitalize;  
+    width: 65%;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+
+.page1 > h1::after{
+    content: "";
+    position: absolute;
+    width: 41%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom: -2%;
+    left: 50%;
+    background-size: cover;
+    transform: translate(-50%, 0);
+}
+
+.page1 .image_1{
+    height: 400px;
+    width: 260px;
+    position: absolute;
+    left: 6%;
+    top: 20%;
+}
+
+.page1 .image_2{
+    height: 220px;
+    width: 250px;
+    position: absolute;
+    right: 25%;
+    top: 18%;
+}
+
+.page1 .image_3{
+    height: 210px;
+    width: 200px;
+    position: absolute;
+    right: 7%;
+    bottom: 6%;
+}
+
+.page1 img{
+    transition: bottom 0.8s ease;
+}
+
+.page1 img:hover{
+    margin-top: -10px;
+}
+
+/*---------------------------*/
+
+.page2{
+    height: 70vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page2 h5{
+    font-size: 19px;
+    font-family:  'Segoe UI';
+    font-weight: 500;
+    position: relative;
+}
+
+.page2 h5::before{
+    content: "";
+    position: absolute;
+    left: -5%;
+    top: 35%;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: springgreen;
+}
+
+.page2 h1{
+    margin: 30px 0;
+    width: 70%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium';
+    position: relative;
+}
+
+.page2 h1::after{
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 210px;
+    bottom: -4px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    left: 38%;
+}
+
+.about-us{
+    /* background-color: red; */
+    display: flex; 
+    align-items: center;
+}
+
+.about-us h4{
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.greenDiv{
+    height: 40px;
+    width: 80px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us img{
+    rotate: 90deg;
+    height: 50px;
+    /* position: absolute; */
+}
+
+.page3{
+    width: 100%;
+    height: 100%;
+}
